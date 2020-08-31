@@ -19,7 +19,7 @@ class Functions{
 		$this->username = 'root';
 		$this->password = '';
 		$this->database = 'online_exam';
-		$this->home_page = 'http://localhost/online_exam/';
+		$this->home_page = 'http://localhost/Online-Examination-System/';
 
 		$this->connect = new PDO("mysql:host=$this->host; dbname=$this->database", "$this->username", "$this->password");
 
@@ -50,9 +50,9 @@ class Functions{
 
 		$mail->SMTPAuth = true;
 
-		$mail->Username = '';
+		$mail->Username = 'Your Email ID';
 
-		$mail->Password = '';
+		$mail->Password = 'Your Password';
 
 		$mail->SMTPSecure = 'tls';
 
