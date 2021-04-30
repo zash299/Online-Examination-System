@@ -273,8 +273,10 @@ $(document).ready(function(){
 		var remaining_second = $("#exam_timer").TimeCircles().getTime();
 		if(remaining_second < 1)
 		{
-			alert('Exam time over');
-			window.location.replace = "http://localhost/online_exam/user/enrolled_exam.php";
+			if(!alert('Examination Time Is Over, Click OK !'))
+			{
+				window.location = "http://online_exam/user/enrolled_exam.php";
+			}
 		}
 	}, 1000);
 
